@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Города герой</title>
-  <script src="../utils/goToPage.js" type="text/javascript"></script> 
-  <link href="../css/homeStyles.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-
-  <header>
-<ul class="menu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css//homeStyles.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=efc9ccc3-30b1-4f3b-aa07-6c190a7c17ba&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <script src="../utils/ map.js" type="text/javascript"></script>
+    <script src="../utils/goToPage.js" type="text/javascript"></script> 
+    <title>Города герой</title>
+  </head>
+  <body>
+    <header>
+      <ul class="menu">
   <li>
     <button onclick="goToPage('./home.html')">Главная</button>
   </li>
@@ -22,8 +26,11 @@
   </li>
 </ul> 
   </header>
-  <main>
-    
-  </main>
-</body>
+    </header>
+    <main>
+      <div id="map"></div>
+    </main>
+  </body>
 </html>
+
+
