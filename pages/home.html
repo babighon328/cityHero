@@ -8,6 +8,7 @@
       src="https://api-maps.yandex.ru/2.1/?apikey=efc9ccc3-30b1-4f3b-aa07-6c190a7c17ba&lang=ru_RU"
       type="text/javascript"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../utils/ map.js" type="text/javascript"></script>
     <script src="../utils/goToPage.js" type="text/javascript"></script> 
     <title>Города герой</title>
@@ -22,13 +23,25 @@
     <button onclick="goToPage('./listCity.html')">Города герои</button>
   </li>
   <li>
-    <button href="#">gallery</button>
+    <button onclick="goToPage('./gallery.html')">Галерея</button>
   </li>
 </ul> 
   </header>
     </header>
     <main>
+      <div class="descriptions">
+        <h2>
+          <strong>Город-герой</strong> — высшая степень отличия, которой удостоены двенадцать городов Советского Союза, прославившихся своей героической обороной во время Великой Отечественной войны 1941—1945 годов. Кроме этого, Брестской крепости присвоено звание крепости-героя.
+        </h2>
+      </div>
       <div id="map"></div>
+      <div class="map_descriptions">
+        <h2 class="title">Интерактивная карта городов-героев</h2>
+        <h2>
+          На этой карте отмечены города-герои, сыгравшие ключевую роль в Великой Отечественной войне. 
+  Вы можете взаимодействовать с картой, чтобы узнать больше о каждом городе.
+        </h2>
+      </div>
     </main>
   </body>
 </html>
