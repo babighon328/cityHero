@@ -1,4 +1,3 @@
-
 html,
 body,
 div,
@@ -86,10 +85,6 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  background-color: hsl(180deg 8.43% 16.27%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 article,
@@ -104,10 +99,6 @@ menu,
 nav,
 section {
   display: block;
-}
-
-body {
-  line-height: 1;
 }
 
 ol,
@@ -133,73 +124,88 @@ table {
   border-spacing: 0;
 }
 
+body {
+  line-height: 1;
+  background-color: hsl(180deg 8.43% 16.27%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  display: block;
+  background-image: url('/image/back.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  height: 500px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
 main {
   width: calc(90vw - 10px);
-  height: 100%;
-  background-color: blanchedalmond;
+  height: 120%;
+  background-color: #e7cba3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
 }
+
 #map {
-  width: 100%;
-  height: 700px;
+  width: 50%;
+  height: 650px;
 }
 
 .ymaps-2-1-79-copyrights-pane,
 .ymaps-2-1-79-map-title {
   display: none !important;
-  
+}
 .menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-    padding: 10px 0; /* Добавляем отступы сверху и снизу */
-    background: rgba(25, 23, 22, 0.8); /* Полупрозрачный темный фон */
-    border-bottom: 1px solid #c34832;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    backdrop-filter: blur(5px); /* Размытие фона */
-    border-radius: 10px 10px 0 0; /* Скругленные углы сверху */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Тень для глубины */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0; /* Добавляем отступы сверху и снизу */
+  background: rgba(25, 23, 22, 0.8); /* Полупрозрачный темный фон */
+  border-bottom: 1px solid #c34832;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  backdrop-filter: blur(5px); /* Размытие фона */
+  border-radius: 10px 10px 0 0; /* Скругленные углы сверху */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Тень для глубины */
 }
 
 .menu li {
-    list-style-type: none;
+  list-style-type: none;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .menu li button {
-    display: block;
-    width: 200px;
-    padding: 20px 30px; /* Уменьшаем отступы для более компактного вида */
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    background-color: transparent;
-    font-size: 20px; /* Уменьшаем размер шрифта */
-    font-weight: 600;
-    text-transform: uppercase;
-    transition: all 0.3s ease; /* Плавная анимация */
-   border: 0;
+  display: block;
+  width: 220px;
+  padding: 20px 30px; /* Уменьшаем отступы для более компактного вида */
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: transparent;
+  font-size: 20px; /* Уменьшаем размер шрифта */
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s ease; /* Плавная анимация */
+  border: 0;
 }
 
 .menu li button:hover {
-    background: rgba(195, 72, 50, 0.8); /* Полупрозрачный оранжевый фон */
-    color: #fff;
-    transform: translateY(-5px); /* Эффект подъема при наведении */
-   border-radius: 5px;
-    box-shadow: 0 4px 15px rgba(195, 72, 50, 0.5); /* Тень при наведении */
-}
-
-header {
-    background-image: url('../image/Фотро.JPG'); /* Укажите путь к изображению */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    height: 500px;
-    position: relative;
+  background: rgba(195, 72, 50, 0.8); /* Полупрозрачный оранжевый фон */
+  color: #fff;
+  transform: translateY(-5px); /* Эффект подъема при наведении */
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(195, 72, 50, 0.5); /* Тень при наведении */
 }
