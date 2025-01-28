@@ -15,41 +15,119 @@ function init() {
     }
   );
 
-  map.controls.remove('geolocationControl');
-  map.controls.remove('searchControl');
-  map.controls.remove('trafficControl');
-  map.controls.remove('typeSelector');
-  map.controls.remove('fullscreenControl');
-  map.controls.remove('rulerControl');
+  [
+    'geolocationControl',
+    'searchControl',
+    'trafficControl',
+    'typeSelector',
+    'fullscreenControl',
+    'rulerControl',
+  ].forEach((control) => {
+    map.controls.remove(control);
+  });
+
   map.options.set('suppressCopyright', true);
 
-  const placemark1 = new ymaps.Placemark([55.751574, 37.573856], {
-    hintContent: 'Москва',
-  });
-  const placemark2 = new ymaps.Placemark([59.93428, 30.335098], {
-    hintContent: 'Санкт-Петербург',
-  });
-  const placemark3 = new ymaps.Placemark([48.707067, 44.516975], {
-    hintContent: 'Волгоград',
-  });
-  const placemark4 = new ymaps.Placemark([44.723489, 37.76866], {
-    hintContent: 'Новороссийск',
-  });
-  const placemark5 = new ymaps.Placemark([54.193122, 37.617348], {
-    hintContent: 'Тула',
-  });
-  const placemark6 = new ymaps.Placemark([68.969562, 33.074541], {
-    hintContent: 'Мурманск',
-  });
-  const placemark7 = new ymaps.Placemark([54.782635, 32.045287], {
-    hintContent: 'Смоленск',
+  const BalloonLayout = ymaps.templateLayoutFactory.createClass(
+    '<div class="custom-balloon">' +
+      '<div class="balloon-content">' +
+      '<h3>$[properties.balloonHeader]</h3>' +
+      '<span class="url">$[properties.url]</span>' +
+      '<button class="details-btn">Подробнее →</button>' +
+      '</div>' +
+      '</div>',
+    {
+      build: function () {
+        BalloonLayout.superclass.build.call(this);
+        this._$element = $('.custom-balloon', this.getParentElement());
+        this._$element.find('.details-btn').on('click', this.onDetailsClick);
+      },
+
+      onDetailsClick: function (e) {
+        const cityUrl = $(e.currentTarget)
+          .closest('.balloon-content')
+          .find('span')
+          .text();
+        window.showCityDetails(cityUrl);
+      },
+
+      clear: function () {
+        BalloonLayout.superclass.clear.call(this);
+      },
+    }
+  );
+
+  const placemarkOptions = {
+    iconLayout: 'default#image',
+    iconImageHref: '../image/starPlaceMark.png',
+    iconImageSize: [32, 32],
+    iconImageOffset: [-16, -32],
+    balloonContentLayout: BalloonLayout,
+    hideIconOnBalloonOpen: false,
+  };
+
+  const cities = [
+    {
+      coordinates: [55.751574, 37.573856],
+      name: 'Москва',
+      url: 'fsdfsdfsd',
+    },
+    {
+      coordinates: [59.93428, 30.335098],
+      name: 'Санкт-Петербург',
+      url: '',
+    },
+    {
+      coordinates: [48.707067, 44.516975],
+      name: 'Волгоград',
+      url: '',
+    },
+    {
+      coordinates: [44.723489, 37.76866],
+      name: 'Новороссийск',
+      url: '',
+    },
+    {
+      coordinates: [54.193122, 37.617348],
+      name: 'Тула',
+      url: '',
+    },
+    {
+      coordinates: [68.969562, 33.074541],
+      name: 'Мурманск',
+      url: '',
+    },
+    {
+      coordinates: [54.782635, 32.045287],
+      name: 'Смоленск',
+      url: '',
+    },
+    {
+      coordinates: [45.326572, 36.508314],
+      name: 'Керчь',
+      url: '',
+    },
+    {
+      coordinates: [44.6178, 33.5256],
+      name: 'Севастополь',
+      url: '',
+    },
+  ];
+
+  cities.forEach((city) => {
+    const placemark = new ymaps.Placemark(
+      city.coordinates,
+      {
+        balloonHeader: city.name,
+        url: city.url,
+      },
+      placemarkOptions
+    );
+
+    map.geoObjects.add(placemark);
   });
 
-  map.geoObjects.add(placemark1);
-  map.geoObjects.add(placemark2);
-  map.geoObjects.add(placemark3);
-  map.geoObjects.add(placemark4);
-  map.geoObjects.add(placemark5);
-  map.geoObjects.add(placemark6);
-  map.geoObjects.add(placemark7);
+  window.showCityDetails = function (cityUrl) {
+    console.log(`Переход на страницу города: ${cityUrl}`);
+  };
 }
