@@ -150,6 +150,7 @@ main {
   height: 100%;
   background-color: #d5b58b;
   display: flex;
+  flex-direction: column;
   align-items: start;
   justify-content: center;
   border-radius: 5px;
@@ -185,7 +186,7 @@ main {
   text-decoration: none;
   color: #fff;
   background-color: transparent;
-  font-size: 20px; 
+  font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
   transition: all 0.3s ease;
@@ -193,18 +194,35 @@ main {
 }
 
 .menu li button:hover {
-  background: rgba(195, 72, 50, 0.8); 
+  background: rgba(195, 72, 50, 0.8);
   color: #fff;
-  transform: translateY(-5px); 
+  transform: translateY(-5px);
   border-radius: 5px;
-  box-shadow: 0 4px 15px rgba(195, 72, 50, 0.5); 
+  box-shadow: 0 4px 15px rgba(195, 72, 50, 0.5);
 }
+
+.container_swiper_city {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
 .swiper-container {
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
 }
+
 .swiper-slide img {
   width: 100%;
   height: auto;
+  border-radius: 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000; /* Цвет кнопок */
+}
+
+.swiper-pagination {
+  bottom: 10px !important; /* Корректное положение пагинации */
 }

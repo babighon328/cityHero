@@ -31,6 +31,7 @@ function init() {
   const BalloonLayout = ymaps.templateLayoutFactory.createClass(
     '<div class="custom-balloon">' +
       '<div class="balloon-content">' +
+      '<img class="imgCity" src="$[properties.img]" alt="$[properties.balloonHeader]">' +
       '<h3>$[properties.balloonHeader]</h3>' +
       '<span class="url">$[properties.url]</span>' +
       '<button class="details-btn">Подробнее →</button>' +
@@ -71,46 +72,55 @@ function init() {
       coordinates: [55.751574, 37.573856],
       name: 'Москва',
       url: 'fsdfsdfsd',
+      img: '../image/moskva.png',
     },
     {
       coordinates: [59.93428, 30.335098],
       name: 'Санкт-Петербург',
       url: '',
+      img: '../image/Saint Petersburg (Leningrad).png',
     },
     {
       coordinates: [48.707067, 44.516975],
       name: 'Волгоград',
       url: '',
+      img: '../image/Volgograd (Stalingrad).png',
     },
     {
       coordinates: [44.723489, 37.76866],
       name: 'Новороссийск',
       url: '',
+      img: '../image/Novorossiysk.png',
     },
     {
       coordinates: [54.193122, 37.617348],
       name: 'Тула',
       url: '',
+      img: '../image/tula.webp',
     },
     {
       coordinates: [68.969562, 33.074541],
       name: 'Мурманск',
       url: '',
+      img: '../image/Murmansk.png',
     },
     {
       coordinates: [54.782635, 32.045287],
       name: 'Смоленск',
       url: '',
+      img: '../image/Smolensk.png',
     },
     {
       coordinates: [45.326572, 36.508314],
       name: 'Керчь',
       url: '',
+      img: '../image/Kerch.png',
     },
     {
       coordinates: [44.6178, 33.5256],
       name: 'Севастополь',
       url: '',
+      img: '../image/Sevastopol.png',
     },
   ];
 
@@ -120,6 +130,7 @@ function init() {
       {
         balloonHeader: city.name,
         url: city.url,
+        img: city.img,
       },
       placemarkOptions
     );
