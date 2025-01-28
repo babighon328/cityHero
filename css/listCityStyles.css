@@ -1,0 +1,283 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+ margin-bottom: 20px; 
+line-height: 1;
+  background-color: hsl(180deg 8.43% 16.27%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  display: block;
+  background-image: url('/image/back.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  height: 500px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+main {
+    width: calc(95vw - 15px);
+    height: 100%;
+    background-color: #d5b58b;
+    display: flex;
+    flex-direction:column ;
+    align-items: start;
+    justify-content: center;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+#map {
+  width: 50%;
+  height: 650px;
+}
+
+.ymaps-2-1-79-copyrights-pane,
+.ymaps-2-1-79-map-title {
+  display: none !important;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0; /* Добавляем отступы сверху и снизу */
+  background: rgba(25, 23, 22, 0.8); /* Полупрозрачный темный фон */
+  border-bottom: 1px solid #c34832;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  backdrop-filter: blur(5px); /* Размытие фона */
+  border-radius: 10px 10px 0 0; /* Скругленные углы сверху */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Тень для глубины */
+}
+
+.menu li {
+  list-style-type: none;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.menu li button {
+  display: block;
+  width: 220px;
+  padding: 20px 30px; /* Уменьшаем отступы для более компактного вида */
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: transparent;
+  font-size: 20px; /* Уменьшаем размер шрифта */
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s ease; /* Плавная анимация */
+  border: 0;
+}
+
+.menu li button:hover {
+  background: rgba(195, 72, 50, 0.8); /* Полупрозрачный оранжевый фон */
+  color: #fff;
+  transform: translateY(-5px); /* Эффект подъема при наведении */
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(195, 72, 50, 0.5); /* Тень при наведении */
+}
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 10px; 
+    height: 100%;
+    width: 100%;
+    justify-items: center
+}
+
+.city-button {
+    position: relative;
+    width: 400px;
+    height: 250px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease;
+    padding: 0;
+}
+
+.city-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.city-button:hover {
+    transform: scale(1.05);
+}
+
+.city-name {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.city-description {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+}
+.content {
+    font-size: 33px;
+    color: #5a3e1b;
+    text-align: left;
+    margin-left: 0; 
+    margin-right: auto;
+    padding-left: 1em; 
+    border-left: 4px solid #5a3e1b; 
+    font-style: italic; 
+}
+  blockquote footer {
+    text-align: right; 
+    font-size: 0.9em; 
+    color: #5a3e1b;
+  }
