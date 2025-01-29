@@ -1,0 +1,302 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  line-height: 1;
+  background-color: hsl(180deg 8.43% 16.27%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+header {
+  display: block;
+  background-image: url('/image/back.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  height: 500px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  
+  align-items: start;
+  justify-content: space-between;
+  width: calc(95vw - 15px);
+  height: 100%;
+  background-image: url();
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 20px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 0;
+    background: rgba(25, 23, 22, 0.8);
+    border-bottom: 1px solid #c34832;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    backdrop-filter: blur(5px);
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .menu li {
+    list-style-type: none;
+  }
+  
+  .menu li button {
+    display: block;
+    width: 220px;
+    padding: 20px 30px; /* Уменьшаем отступы для более компактного вида */
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    font-size: 20px; /* Уменьшаем размер шрифта */
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease; /* Плавная анимация */
+    border: 0;
+  }
+  
+  .menu li button:hover {
+    background: rgba(195, 72, 50, 0.8); /* Полупрозрачный оранжевый фон */
+    color: #fff;
+    transform: translateY(-5px); /* Эффект подъема при наведении */
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(195, 72, 50, 0.5); /* Тень при наведении */
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+.intro {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    
+}
+
+.intro p {
+    text-indent: 20px;
+    
+}
+
+/* Фото Ленинграда */
+.photo-section {
+    text-align: left;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.city-photo {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.photo-caption {
+    font-style: italic;
+    color: #666;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Интересные факты */
+.facts {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.facts h2 {
+    color: black;
+    margin-bottom: 15px;
+}
+
+.facts ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.facts li {
+    margin-bottom: 10px;
+}
+
+/* Памятники */
+.monuments {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.monuments h2 {
+    color: black;
+    margin-bottom: 15px;
+}
+
+.monument {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.monument-photo {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.monument h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
