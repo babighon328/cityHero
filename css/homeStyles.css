@@ -134,7 +134,7 @@ body {
 }
 header {
   display: block;
-  background-image: url('/image/back.jpg');
+  background-image: url('../image/back.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -152,7 +152,7 @@ main {
   justify-content: space-between;
   width: calc(95vw - 15px);
   height: 100%;
-  background-image: url(/image/256855a4-6831-595c-81e4-eb62675d22f2.jpg);
+  background-image: url(../image/256855a4-6831-595c-81e4-eb62675d22f2.jpg);
   border-radius: 5px;
   overflow: hidden;
   padding: 20px;
