@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css//homeStyles.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=efc9ccc3-30b1-4f3b-aa07-6c190a7c17ba&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../utils/ map.js" type="text/javascript"></script>
+    <script src="../utils/goToPage.js" type="text/javascript"></script> 
+    <title>Города герой</title>
+  </head>
+  <body>
+    <header>
+      <ul class="menu">
+  <li>
+    <button onclick="goToPage('./home.html')">Главная</button>
+  </li>
+  <li>
+    <button onclick="goToPage('./listCity.html')">Города герои</button>
+  </li>
+  <li>
+    <button onclick="goToPage('./gallery.html')">Галерея</button>
+  </li>
+</ul> 
+  </header>
+    </header>
+    <main>
+      <div class="descriptions">
+        <h2>
+          <strong>Интерактивная карта городов-героев</strong> <br>На этой карте отмечены города-герои, сыгравшие ключевую роль в Великой Отечественной войне. 
+          Вы можете взаимодействовать с картой, чтобы узнать больше о каждом городе.</br>
+        </h2>
+      </div>
+      <div id="map"></div>
+      <div class="map_descriptions">
+ <div class="timeline-table">
+          <h2 class="title">Хронология присвоения звания "Город-герой"</h2>
+          <table>
+              <thead>
+                  <tr>
+                      <th>Город</th>
+                      <th>Год присвоения звания</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Ленинград (Санкт-Петербург)</td>
+                      <td>1945</td>
+                  </tr>
+                  <tr>
+                      <td>Сталинград (Волгоград)</td>
+                      <td>1945</td>
+                  </tr>
+                  <tr>
+                      <td>Севастополь</td>
+                      <td>1945</td>
+                  </tr>
+                  <tr>
+                      <td>Одесса</td>
+                      <td>1945</td>
+                  </tr>
+                  <tr>
+                      <td>Киев</td>
+                      <td>1965</td>
+                  </tr>
+                  <tr>
+                      <td>Москва</td>
+                      <td>1965</td>
+                  </tr>
+                  <tr>
+                      <td>Керчь</td>
+                      <td>1973</td>
+                  </tr>
+                  <tr>
+                      <td>Новороссийск</td>
+                      <td>1973</td>
+                  </tr>
+                  <tr>
+                      <td>Минск</td>
+                      <td>1974</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+      </div>
+</main>
+      </div>
+    </main>
+  </body>
+</html>

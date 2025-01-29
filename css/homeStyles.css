@@ -222,24 +222,24 @@ main {
 .menu li button {
   display: block;
   width: 220px;
-  padding: 20px 30px; /* Уменьшаем отступы для более компактного вида */
+  padding: 20px 30px;
   text-align: center;
   text-decoration: none;
   color: #fff;
   background-color: transparent;
-  font-size: 20px; /* Уменьшаем размер шрифта */
+  font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
-  transition: all 0.3s ease; /* Плавная анимация */
+  transition: all 0.3s ease;
   border: 0;
 }
 
 .menu li button:hover {
-  background: rgba(195, 72, 50, 0.8); /* Полупрозрачный оранжевый фон */
+  background: rgba(195, 72, 50, 0.8);
   color: #fff;
-  transform: translateY(-5px); /* Эффект подъема при наведении */
+  transform: translateY(-5px);
   border-radius: 5px;
-  box-shadow: 0 4px 15px rgba(195, 72, 50, 0.5); /* Тень при наведении */
+  box-shadow: 0 4px 15px rgba(195, 72, 50, 0.5);
 }
 .custom-balloon {
   background: white;
