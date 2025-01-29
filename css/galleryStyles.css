@@ -202,27 +202,23 @@ main {
 }
 
 .container_swiper_city {
-  margin-bottom: 50px;
   text-align: center;
+  overflow: hidden;
 }
 
 .swiper-container {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
+  width: calc(95vw - 15px);
+  height: 350px;
+  margin: 20px auto;
 }
 
-.swiper-slide img {
-  width: 100%;
-  height: auto;
+.swiper-slide > img {
+  width: 500px;
+  height: 300px;
   border-radius: 10px;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  color: #000; /* Цвет кнопок */
-}
-
-.swiper-pagination {
-  bottom: 10px !important; /* Корректное положение пагинации */
+.swiper-pagination,
+.swiper-pagination1 {
+  bottom: 10px;
 }
