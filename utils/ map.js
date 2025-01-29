@@ -71,13 +71,13 @@ function init() {
     {
       coordinates: [55.751574, 37.573856],
       name: 'Москва',
-      url: 'fsdfsdfsd',
+      url: '../pages/mockwa.html',
       img: '../image/moskva.png',
     },
     {
       coordinates: [59.93428, 30.335098],
       name: 'Санкт-Петербург',
-      url: '',
+      url: '../pages/spd.html',
       img: '../image/Saint Petersburg (Leningrad).png',
     },
     {
@@ -120,7 +120,7 @@ function init() {
       coordinates: [44.6178, 33.5256],
       name: 'Севастополь',
       url: '',
-      img: './image/Sevastopol.png',
+      img: '../image/Sevastopol.png',
     },
   ];
 
@@ -139,6 +139,6 @@ function init() {
   });
 
   window.showCityDetails = function (cityUrl) {
-    console.log(`Переход на страницу города: ${cityUrl}`);
+    window.location.href = cityUrl;
   };
 }
