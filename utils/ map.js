@@ -60,7 +60,7 @@ function init() {
 
   const placemarkOptions = {
     iconLayout: 'default#image',
-    iconImageHref: './image/starPlaceMark.png',
+    iconImageHref: '/image/starPlaceMark.png',
     iconImageSize: [32, 32],
     iconImageOffset: [-16, -32],
     balloonContentLayout: BalloonLayout,
