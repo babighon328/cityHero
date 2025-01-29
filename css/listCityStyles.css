@@ -31,7 +31,6 @@ s,
 samp,
 small,
 strike,
-strong,
 sub,
 sup,
 tt,
@@ -147,7 +146,10 @@ header {
 main {
     width: calc(95vw - 15px);
     height: 100%;
-    background-color: #d5b58b;
+    background-image: url(..//image/526059.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction:column ;
     align-items: start;
@@ -267,17 +269,22 @@ main {
     border-radius: 5px;
 }
 .content {
-    font-size: 33px;
-    color: #5a3e1b;
-    text-align: left;
-    margin-left: 0; 
-    margin-right: auto;
-    padding-left: 1em; 
-    border-left: 4px solid #5a3e1b; 
-    font-style: italic; 
+  font-size: 33px;
+  color: black;
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
+  padding: 1em;
+  padding-left: 1.5em;
+  border-left: 4px solid black;
+  font-style: italic;
+  background-color: #fff;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15),
+    -4px -4px 15px rgba(255, 255, 255, 0.7); 
+  border-radius: 8px; 
 }
   blockquote footer {
     text-align: right; 
     font-size: 0.9em; 
-    color: #5a3e1b;
+    color: black;
   }
