@@ -132,7 +132,7 @@ line-height: 1;
 }
 header {
   display: block;
-  background-image: url('/image/back.jpg');
+  background-image: url('../image/back.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -146,7 +146,7 @@ header {
 main {
     width: calc(95vw - 15px);
     height: 100%;
-    background-image: url(..//image/526059.jpg);
+    background-image: url(../image/526059.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
