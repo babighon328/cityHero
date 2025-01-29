@@ -120,7 +120,7 @@ function init() {
       coordinates: [44.6178, 33.5256],
       name: 'Севастополь',
       url: '',
-      img: '../image/Sevastopol.png',
+      img: './image/Sevastopol.png',
     },
   ];
 
