@@ -168,21 +168,22 @@ main {
 .ymaps-2-1-79-map-title {
   display: none !important;
 }
+
 .menu {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
-  padding: 10px 0; /* Добавляем отступы сверху и снизу */
-  background: rgba(25, 23, 22, 0.8); /* Полупрозрачный темный фон */
+  padding: 10px 0;
+  background: rgba(25, 23, 22, 0.8);
   border-bottom: 1px solid #c34832;
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  backdrop-filter: blur(5px); /* Размытие фона */
-  border-radius: 10px 10px 0 0; /* Скругленные углы сверху */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Тень для глубины */
+  backdrop-filter: blur(5px);
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .menu li {
