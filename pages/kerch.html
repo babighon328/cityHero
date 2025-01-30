@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/spbStyles.css" rel="stylesheet" type="text/css" />
+    <script src="../utils/goToPage.js" type="text/javascript"></script> 
+    <title>Города герой</title>
+  </head>
+  <body>
+    <header>
+      <ul class="menu">
+  <li>
+    <button onclick="goToPage('../index.html')">Главная</button>
+  </li>
+  <li>
+    <button onclick="goToPage('./listCity.html')">Города герои</button>
+  </li>
+  <li>
+    <button onclick="goToPage('./gallery.html')">Галерея</button>
+  </li>
+</ul> 
+  </header>
+    <main>
+        <div>
+        <section class="intro">
+            <p>
+                <b>Керчь</b> — город, который стал символом мужества и стойкости в годы Великой Отечественной войны. 
+                Город пережил две оккупации и был освобожден в ходе Керченско-Эльтигенской десантной операции в 1943 году. 
+                Керчь стала одним из ключевых пунктов обороны Крыма и внесла огромный вклад в победу над фашизмом.
+            </p>
+        </section>
+
+        <!-- Фото Керчи -->
+        <section class="photo-section">
+            <img src="../image/kerch.webp" alt="Керчь во время войны" class="city-photo">
+            <p class="photo-caption">Керчь во время Великой Отечественной войны.</p>
+        </section>
+
+        <!-- Интересные факты -->
+        <section class="facts">
+            <h2>Интересные факты о Керчи</h2>
+            <ul>
+                <li>Керчь пережила две оккупации: с ноября 1941 года по декабрь 1941 года и с мая 1942 года по апрель 1944 года.</li>
+                <li>Керченско-Эльтигенская десантная операция стала одной из самых масштабных десантных операций в истории войны.</li>
+                <li>Аджимушкайские каменоломни стали символом героизма защитников Керчи, которые продолжали сражаться в подземных условиях.</li>
+                <li>В 1973 году Керчь получила звание "Город-герой".</li>
+                <li>Керчь — один из древнейших городов мира, его история насчитывает более 2600 лет.</li>
+            </ul>
+        </section>
+
+    </div>
+        <section class="monuments">
+            <h2>Памятники, посвященные героизму Керчи</h2>
+            <div class="monument">
+                <img src="../image/kamenolomni.webp" alt="Аджимушкайские каменоломни" class="monument-photo">
+                <h3>Аджимушкайские каменоломни</h3>
+                <p>
+                    Подземные каменоломни, где в годы войны укрывались и сражались защитники Керчи. 
+                    Сегодня это мемориальный комплекс, посвященный их подвигу.
+                </p>
+            </div>
+            <div class="monument">
+                <img src="../image/gora.webp" alt="Гора Митридат" class="monument-photo">
+                <h3>Гора Митридат</h3>
+                <p>
+                    Гора, на которой расположен мемориал воинской славы и памяти павших героев. 
+                    Отсюда открывается вид на весь город и Керченский пролив.
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

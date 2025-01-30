@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/mockwaStyles.css" rel="stylesheet" type="text/css" />
+    <script src="../utils/goToPage.js" type="text/javascript"></script> 
+    <title>Города герой</title>
+  </head>
+  <body>
+    <header>
+      <ul class="menu">
+  <li>
+    <button onclick="goToPage('../index.html')">Главная</button>
+  </li>
+  <li>
+    <button onclick="goToPage('./listCity.html')">Города герои</button>
+  </li>
+  <li>
+    <button onclick="goToPage('./gallery.html')">Галерея</button>
+  </li>
+</ul> 
+  </header>
+    <main>
+        <div>
+        <section class="intro">
+            <p>
+                <b>Мурманск </b>— город, который стал символом мужества и стойкости в годы Великой Отечественной войны. 
+                Расположенный за Полярным кругом, Мурманск был важнейшим портом, через который шли поставки по ленд-лизу. 
+                Город подвергался массированным бомбардировкам, но его защитники и жители выстояли, несмотря на все трудности.
+            </p>
+        </section>
+
+        <!-- Фото Мурманска -->
+        <section class="photo-section">
+            <img src="../image/myrmanskwar.webp" alt="Мурманск во время войны" class="city-photo">
+            <p class="photo-caption">Мурманск во время Великой Отечественной войны.</p>
+        </section>
+
+        
+        <section class="facts">
+            <h2>Интересные факты о Мурманске</h2>
+            <ul>
+                <li>Мурманск был одним из ключевых портов, через которые шли поставки по ленд-лизу из США и Великобритании.</li>
+                <li>Город подвергался массированным бомбардировкам, став одним из самых разрушенных городов СССР.</li>
+                <li>За время войны на Мурманск было сброшено более 185 тысяч бомб.</li>
+                <li>Несмотря на разрушения, порт Мурманска продолжал работать, обеспечивая фронт всем необходимым.</li>
+                <li>В 1985 году Мурманск получил звание "Город-герой".</li>
+            </ul>
+        </section>
+
+        </div>
+        <section class="monuments">
+            <h2>Памятники, посвященные героизму Мурманска</h2>
+            <div class="monument">
+                <img src="../image/memorialmyrmansk.webp" alt="Мемориал «Защитникам Советского Заполярья»" class="monument-photo">
+                <h3>Мемориал «Защитникам Советского Заполярья»</h3>
+                <p>
+                    Монумент, известный как "Алеша", посвящен защитникам Мурманска и всего Заполярья. 
+                    Это один из самых высоких памятников в России, его высота составляет 35,5 метров.
+                </p>
+            </div>
+            <div class="monument">
+                <img src="../image/mayak.webp" alt="Мурманский маяк" class="monument-photo">
+                <h3>Мурманский маяк</h3>
+                <p>
+                    Маяк, установленный в память о моряках, погибших в годы войны. 
+                    Он символизирует стойкость и мужество защитников Мурманска.
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

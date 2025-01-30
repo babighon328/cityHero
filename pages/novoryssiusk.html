@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/sevastopolStyles.css" rel="stylesheet" type="text/css" />
+    <script src="../utils/goToPage.js" type="text/javascript"></script> 
+    <title>Города герой</title>
+  </head>
+  <body>
+    <header>
+      <ul class="menu">
+  <li>
+    <button onclick="goToPage('../index.html')">Главная</button>
+  </li>
+  <li>
+    <button onclick="goToPage('./listCity.html')">Города герои</button>
+  </li>
+  <li>
+    <button onclick="goToPage('./gallery.html')">Галерея</button>
+  </li>
+</ul> 
+  </header>
+    <main>
+        <div>
+        <section class="intro">
+            <p>
+                <b>Новороссийск</b> — город, который стал символом мужества и стойкости в годы Великой Отечественной войны. 
+                В 1942–1943 годах здесь проходили ожесточенные бои за контроль над Черноморским побережьем. 
+                Новороссийск был ключевым пунктом обороны Кавказа, а его защитники проявили невероятное мужество и самоотверженность.
+            </p>
+        </section>
+
+        <!-- Фото Новороссийска -->
+        <section class="photo-section">
+            <img src="../image/novwar.webp" alt="Новороссийск во время войны" class="city-photo">
+            <p class="photo-caption">Новороссийск во время Великой Отечественной войны.</p>
+        </section>
+
+        <!-- Интересные факты -->
+        <section class="facts">
+            <h2>Интересные факты о Новороссийске</h2>
+            <ul>
+                <li>Новороссийск был оккупирован немецкими войсками с сентября 1942 года по сентябрь 1943 года.</li>
+                <li>Малая Земля — плацдарм, который советские войска удерживали 225 дней, стал символом героизма защитников города.</li>
+                <li>16 сентября 1943 года Новороссийск был освобожден в ходе Новороссийско-Таманской операции.</li>
+                <li>В 1973 году Новороссийск получил звание "Город-герой".</li>
+                <li>Новороссийск — крупнейший порт на Черном море, его стратегическое значение было огромным в годы войны.</li>
+            </ul>
+        </section>
+
+    </div>
+        <section class="monuments">
+            <h2>Памятники, посвященные героизму Новороссийска</h2>
+            <div class="monument">
+                <img src="../image/malayazemlya.webp" alt="Мемориал «Малая Земля»" class="monument-photo">
+                <h3>Мемориал «Малая Земля»</h3>
+                <p>
+                    Мемориал, посвященный героям, защищавшим плацдарм Малая Земля. 
+                    Комплекс включает в себя скульптуру, музей и памятные плиты с именами погибших.
+                </p>
+            </div>
+            <div class="monument">
+                <img src="../image/obornovor.webp" alt="Линия обороны Новороссийска" class="monument-photo">
+                <h3>Линия обороны Новороссийска</h3>
+                <p>
+                    Мемориальный комплекс, посвященный защитникам города. 
+                    Здесь установлены танки, орудия и памятные знаки, рассказывающие о событиях войны.
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
