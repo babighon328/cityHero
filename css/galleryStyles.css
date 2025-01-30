@@ -204,17 +204,29 @@ main {
 .container_swiper_city {
   text-align: center;
   overflow: hidden;
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 10px 0 5px 0;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), inset 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container_swiper_city > h1 {
+  font-size: 25px;
+  color: #5a3e1b;
+  text-align: left;
+  margin-left: 15px;
 }
 
 .swiper-container {
   width: calc(95vw - 15px);
-  height: 350px;
+  height: 450px;
   margin: 20px auto;
 }
 
 .swiper-slide > img {
   width: 500px;
-  height: 300px;
+  height: 400px;
   border-radius: 10px;
 }
 
