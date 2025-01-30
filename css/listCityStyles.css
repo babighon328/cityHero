@@ -171,7 +171,7 @@ main {
 .menu {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   padding: 10px 0; /* Добавляем отступы сверху и снизу */
   background: rgba(25, 23, 22, 0.8); /* Полупрозрачный темный фон */
