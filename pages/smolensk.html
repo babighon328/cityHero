@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/sevastopolStyles.css" rel="stylesheet" type="text/css" />
+    <script src="../utils/goToPage.js" type="text/javascript"></script> 
+    <title>Города герой</title>
+  </head>
+  <body>
+    <header>
+      <ul class="menu">
+  <li>
+    <button onclick="goToPage('../index.html')">Главная</button>
+  </li>
+  <li>
+    <button onclick="goToPage('./listCity.html')">Города герои</button>
+  </li>
+  <li>
+    <button onclick="goToPage('./gallery.html')">Галерея</button>
+  </li>
+</ul> 
+  </header>
+    <main>
+        <div>
+        <section class="intro">
+            <p>
+                <b>Смоленск</b> — город, который стал символом мужества и стойкости в годы Великой Отечественной войны. 
+                Расположенный на западных рубежах России, Смоленск неоднократно становился щитом, защищавшим страну от врагов. 
+                В 1941 году здесь развернулись ожесточенные бои, которые задержали продвижение немецких войск к Москве.
+            </p>
+        </section>
+
+        <!-- Фото Смоленска -->
+        <section class="photo-section">
+            <img src="../image/smolenskwar.webp" alt="Смоленск во время войны" class="city-photo">
+            <p class="photo-caption">Смоленск во время Великой Отечественной войны.</p>
+        </section>
+
+        <!-- Интересные факты -->
+        <section class="facts">
+            <h2>Интересные факты о Смоленске</h2>
+            <ul>
+                <li>Смоленск был оккупирован немецкими войсками с июля 1941 года по сентябрь 1943 года.</li>
+                <li>Смоленское сражение (1941) задержало продвижение врага к Москве на два месяца, что имело стратегическое значение.</li>
+                <li>Город был почти полностью разрушен, но его жители продолжали сопротивляться оккупантам.</li>
+                <li>В 1985 году Смоленск получил звание "Город-герой".</li>
+                <li>Смоленск — один из древнейших городов России, его история насчитывает более 1000 лет.</li>
+            </ul>
+        </section>
+
+    </div>
+        <section class="monuments">
+            <h2>Памятники, посвященные героизму Смоленска</h2>
+            <div class="monument">
+                <img src="../image/kyrgan.webp" alt="Курган Бессмертия" class="monument-photo">
+                <h3>Курган Бессмертия</h3>
+                <p>
+                    Мемориальный комплекс, посвященный защитникам Смоленска. 
+                    Курган был насыпан в память о погибших воинах и мирных жителях.
+                </p>
+            </div>
+            <div class="monument">
+                <img src="../image/vecnogon.webp" alt="Вечный огонь в Смоленске" class="monument-photo">
+                <h3>Вечный огонь в Смоленске</h3>
+                <p>
+                    Мемориал, расположенный в центре города, посвященный памяти павших героев. 
+                    Вечный огонь символизирует вечную память о подвиге защитников Смоленска.
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
